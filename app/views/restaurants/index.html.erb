@@ -1,1 +1,8 @@
-<h1>Restaurants Index</h1>
+<h1>Franny's Restaurants</h1>
+<ul>
+  <% @restaurants.each do |restaurant| %>
+  <li>
+    <%= link_to restaurant.name, restaurant_path(restaurant) %>
+  </li>
+  <% end %>
+</ul>
